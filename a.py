@@ -9,7 +9,7 @@ config.read('config.cfg')
 ftp_host = config['ftp']['ftp_host']
 ftp_user = config['ftp']['ftp_user']
 ftp_password = config['ftp']['ftp_password']
-#connect to DB
+#connect to FTP server
 ftp = ftplib.FTP(ftp_host)
 ftp.login(ftp_user,ftp_password)
 ftp.retrlines('LIST')
